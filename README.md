@@ -1,9 +1,9 @@
 # LatihanRoomDatabaseKotlin
-\nRoom Database 
-\nCRUD in Activity 
-\nCRUD in Fragment 
-\nLogin SharedPref (Session) 
-\nNotification 
-\nDialog / Alert Dialog 
-\nToolbar 
-\nBottom Navbar
+Room Database<br>
+CRUD in Activity<br>
+CRUD in Fragment<br>
+Login SharedPref (Session)<br> 
+Notification<br>
+Dialog / Alert Dialog<br> 
+Toolbar<br>
+Bottom Navbar<br>
