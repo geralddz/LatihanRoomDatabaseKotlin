@@ -1,0 +1,120 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e86fae16515b42a210ef9f77c2cc408c",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT, `Username` TEXT, `Email` TEXT, `Password` TEXT, `Address` TEXT, `Phone` TEXT, `Image` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "username",
+            "columnName": "Username",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "Email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pass",
+            "columnName": "Password",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "Address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "Phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "img",
+            "columnName": "Image",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "uid"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Book",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bid` INTEGER PRIMARY KEY AUTOINCREMENT, `JudulBuku` TEXT, `Penerbit` TEXT, `Tahun` TEXT, `Harga` INTEGER, `PhotoBook` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "bid",
+            "columnName": "bid",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "judul",
+            "columnName": "JudulBuku",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "penerbit",
+            "columnName": "Penerbit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tahun",
+            "columnName": "Tahun",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "harga",
+            "columnName": "Harga",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "PhotoBook",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "bid"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e86fae16515b42a210ef9f77c2cc408c')"
+    ]
+  }
+}

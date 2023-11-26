@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Profile"
+        android:id="@+id/editprofile"
+        android:icon="@drawable/profile"/>
+    <item android:title="Book"
+        android:id="@+id/listbook"
+        android:icon="@drawable/baseline_library_books_24"/>
+    <item android:title="FRBook"
+        android:id="@+id/frbook"
+        android:icon="@drawable/baseline_list_alt_24"/>
+    <item android:title="FRAdd"
+        android:id="@+id/fraddbook"
+        android:icon="@drawable/baseline_playlist_add_24"/>
+</menu>

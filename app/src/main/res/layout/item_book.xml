@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivitemphoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/photo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JUDUL"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvpenerbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:text="penerbit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvtahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:text="tahun"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvharga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:text="harga"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/ivedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:layout_margin="10dp"
+           android:src="@drawable/baseline_edit_24"/>
+
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_delete_forever_24"
+            />
+    </LinearLayout>
+
+</LinearLayout>
